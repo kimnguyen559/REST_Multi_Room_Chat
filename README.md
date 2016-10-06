@@ -19,23 +19,23 @@ By: Kim Nguyen - kimnguyen559@gmail.com
 The following functionality is completed:
 
 * SERVER SIDE:
-* Client can connect to the Server by sending a HTTP request
-* Client can sign in and join one of two chat rooms, named “room-1” and “room-2”
-* Client can receives instant messages from other Clients in the chat room
-* Client can send instant messages to other Clients in the same chat room
-* Client can quit the current chat room to join another one
-* Client can exit and close the connection
+  Client can connect to the Server by sending a HTTP request
+  Client can sign in and join one of two chat rooms, named “room-1” and “room-2”
+  Client can receives instant messages from other Clients in the chat room
+  Client can send instant messages to other Clients in the same chat room
+  Client can quit the current chat room to join another one
+  Client can exit and close the connection
 
 * CLIENT SIDE:
-* User can get all the services provided by the Server throught the Client app
+  User can get all the services provided by the Server throught the Client app
 
 The following features are implemented:
 
 * SERVER SIDE:
-* Allow scalability using Asynchronous processing feature of JAX-RS: This mechanism allows to keep the thread pool at a minimal size while serving a large number of clients.  For request that takes little time to complete, such as signing in or joining a chat room, Server assigns one thread to one Client. For Client's poll request, there is only one single thread handling all waiting requests. When a new message is coming, the worker thread sends it to all clients queued in the waiting list.
+  Allow scalability using Asynchronous processing feature of JAX-RS: This mechanism allows to keep the thread pool at a minimal size while serving a large number of clients.  For request that takes little time to complete, such as signing in or joining a chat room, Server assigns one thread to one Client. For Client's poll request, there is only one single thread handling all waiting requests. When a new message is coming, the worker thread sends it to all clients queued in the waiting list.
 
 * CLIENT SIDE:
-* Allow users to send and receive messages concurrently by using two different threads in the same process. 
+  Allow users to send and receive messages concurrently by using two different threads in the same process. 
 
 The Interface:
 

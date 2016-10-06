@@ -18,16 +18,16 @@ By: Kim Nguyen - kimnguyen559@gmail.com
 
 The following functionality is completed:
 
-* SERVER SIDE:
-  Client can connect to the Server by sending a HTTP request
-  Client can sign in and join one of two chat rooms, named “room-1” and “room-2”
-  Client can receives instant messages from other Clients in the chat room
-  Client can send instant messages to other Clients in the same chat room
-  Client can quit the current chat room to join another one
-  Client can exit and close the connection
+SERVER SIDE:
+* Client can connect to the Server by sending a HTTP request
+* Client can sign in and join one of two chat rooms, named “room-1” and “room-2”
+* Client can receives instant messages from other Clients in the chat room
+* Client can send instant messages to other Clients in the same chat room
+* Client can quit the current chat room to join another one
+* Client can exit and close the connection
 
-* CLIENT SIDE:
-  User can get all the services provided by the Server throught the Client app
+CLIENT SIDE:
+* User can get all the services provided by the Server throught the Client app
 
 The following features are implemented:
 

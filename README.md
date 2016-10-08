@@ -1,4 +1,4 @@
-# REST Multi-Room Chat Web Service
+## REST Multi-Room Chat Web Service
 
 This project, used Java JAX-RS API and RESTEasy framewok, implements a multiple-room chat REST server that allows users to sign in a chosen room and exchange conversation with other users through instant messages.
 
@@ -11,8 +11,6 @@ When a user enters a chat room, the Server announces them to other users in the 
 While a user is in a chat room, as soon as the Server receives a message from them, it echoes back to others in the room.
 
 When a user quits a chat room, the Server announces the user’s departure.
-
-By: Kim Nguyen - kimnguyen559@gmail.com
 
 ## User Stories
 

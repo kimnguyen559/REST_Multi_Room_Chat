@@ -30,7 +30,7 @@ When a user quits a chat room, the Server announces the user’s departure.
 #### The following features are implemented:
 
 ###### SERVER SIDE:
-* Allow scalability using Asynchronous processing feature of JAX-RS: This mechanism allows to keep the thread pool at a minimal size while serving a large number of clients.  For request that takes little time to complete, such as signing in or joining a chat room, Server assigns one thread to one Client. For Client's poll request, there is only one single thread handling all waiting requests. When a new message is coming, the worker thread sends it to all clients queued in the waiting list.
+* Allow scalability using *Asynchronous processing feature* of *JAX-RS*: This mechanism allows to keep the thread pool at a minimal size while serving a large number of clients.  For request that takes little time to complete, such as signing in or joining a chat room, Server assigns one thread to one Client. For Client's poll request, there is only one single thread handling all waiting requests. When a new message is coming, the worker thread sends it to all clients queued in the waiting list.
 
 ###### CLIENT SIDE:
 * Allow users to send and receive messages concurrently by using two different threads in the same process. 
